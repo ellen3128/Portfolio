@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
+import "./About.css";
 
 export default function About(props) {
   const [about, setAbout] = useState(null);
 
   // create function to make api call
-  const getAboutData = async () => {
+  const getAboutData = async() => {
     // make api call and get response
     const response = await fetch("./about.json");
 
@@ -16,7 +17,10 @@ export default function About(props) {
   };
 
    // make an initial call for the data inside a useEffect, so it only happens once on component load
-   useEffect(() => { getAboutData() } , []);
+   useEffect(() => { 
+    getAboutData(); 
+    return () => {}
+} , []);
 
    // define a function that will return the JSX needed once we get the data
    const loaded = () => (
@@ -24,6 +28,7 @@ export default function About(props) {
        <h2>{about.name}</h2>
        <h3>{about.email}</h3>
        <p>{about.bio}</p>
+       <img className="headshot" src={about.headshot}  alt="" />
      </div>
    );
  

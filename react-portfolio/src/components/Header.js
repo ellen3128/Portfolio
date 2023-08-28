@@ -1,18 +1,19 @@
 import { Link } from "react-router-dom";
+import './Header.css';
 
 export default function Header (props) {
-    const navStyle = {
-        display: "flex",
-        justifyContent: "space-around",
-        border: "3px solid black",
-        padding: "8px",
-        width: "90%",
-        margin: "auto"
-    };
+    // const navStyle = {
+    //     display: "flex",
+    //     justifyContent: "space-around",
+    //     border: "3px solid black",
+    //     padding: "8px",
+    //     width: "90%",
+    //     margin: "auto"
+    // };
     return (
         <header>
-        <h1>My Portfolio Page</h1>
-        <nav style={navStyle}>
+        {/* <nav style={navStyle}> */}
+         <div className="navbar">
           <Link to="/">
             <div>HOME</div>
           </Link>
@@ -22,7 +23,7 @@ export default function Header (props) {
           <Link to="/projects">
             <div>PROJECTS</div>
           </Link>
-        </nav>
+        </div>
       </header>
     );
   }

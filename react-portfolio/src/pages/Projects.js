@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "./Projects.css";
 
 export default function Projects (props) {
     // create state to hold projects
@@ -19,14 +20,19 @@ export default function Projects (props) {
   };
 
   // make an initial call for the data inside a useEffect, so it only happens once on component load
-  useEffect(() => getProjectsData(), []);
+//   useEffect(() => getProjectsData(), []);
+
+  useEffect(() => { 
+    getProjectsData(); 
+    return () => {}
+} , []);
 
   // define a function that will return the JSX needed once we get the data
   const loaded = () => {
     return projects.map((project) => (
       <div>
         <h1>{project.name}</h1>
-        <img src={project.image} />
+        <img src={project.image}  alt="" />
         <a href={project.git}>
           <button>Github</button>
         </a>

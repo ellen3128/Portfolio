@@ -1,0 +1,10 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    margin-top: -10%;
+}
