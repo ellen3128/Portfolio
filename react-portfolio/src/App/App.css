@@ -34,8 +34,33 @@ html, body {
 }
 
 .title {
-  margin-top: -10%;
+  margin:  -10% 0 0 -44%;
+  opacity: 0;
+  transform: translateY(100%);
+  animation: flyInFromBottom 1s ease-out forwards;
+  color: #000; /* Black text */ 
+  text-shadow:
+      3px 3px 6px rgba(0, 0, 0, 0.3),    /* darker shadow to the bottom right */
+      -5px -5px 10px rgba(255, 255, 255, 0.3),  /* lighter shadow to the top left */
+      0px 0px 8px rgba(255, 255, 255, 0.062); /* soft white glow to help the text stand out */
 }
+
+
+.animation {  
+  transform: translateY(100%);
+  animation: flyInFromBottom 1s ease-out forwards;
+}
+@keyframes flyInFromBottom {
+  0% {
+    transform: translateY(100%); /* Start from the bottom */
+    opacity: 0; /* Start as transparent */
+  }
+  100% {
+    transform: translateY(0); /* End at its natural position */
+    opacity: 1; /* Fully visible */
+  }
+}
+
 
 
 h1 {
@@ -46,9 +71,11 @@ h1 {
   transform: translate(-50%, -50%);
   text-align: center;
   font-weight: 500;
-  font-size: 10vw;
+  font-size: 130px;
   line-height: 1;
+  letter-spacing: 5px;
   text-transform: uppercase;
+  
 }
 
 a {
