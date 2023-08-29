@@ -8,6 +8,10 @@
   src: url('../../public/Roboto-Regular.ttf') format('opentype');  
 }
 
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('../../public/Roboto-Bold.ttf') format('opentype');  
+}
 
 
 * {
@@ -53,10 +57,13 @@ html, body {
 
 .logo, 
 .nav-item {
-  margin: 2em;
+  margin: 1em;
+  padding: .5em;
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 1.5rem;
   display: flex;
+  font-family: 'Roboto-Bold', fallbackFont, sans-serif;
+  font-weight: bold;
 }
 
 .title {
@@ -68,9 +75,9 @@ html, body {
   color: #000; /* Black text */ 
   text-align: left;
   text-shadow:
-      3px 3px 6px rgba(0, 0, 0, 0.3),    /* darker shadow to the bottom right */
-      -5px -5px 10px rgba(255, 255, 255, 0.3),  /* lighter shadow to the top left */
-      0px 0px 8px rgba(255, 255, 255, 0.062); /* soft white glow to help the text stand out */
+  2px 2px 4px rgba(0, 0, 0, 0.2),    /* subtler darker shadow to the bottom right */
+    -3px -3px 7px rgba(255, 255, 255, 0.3),  /* lighter shadow to the top left */
+    0px 0px 5px rgba(255, 255, 255, 0.05); /* softer white glow to help the text stand out */    
 }
 
 .title-description {

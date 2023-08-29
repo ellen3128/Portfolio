@@ -8,7 +8,7 @@ function Home(props) {
       <h1 className="title">
         {" "}
         Ellen <br /> Park <br />{" "}
-        <span className="title-description">Design-Inspired Developer</span>
+        <span className="title-description">xxxxx</span>
       </h1>
     </div>
   );
