@@ -5,24 +5,38 @@
   color: #0f0f0f;
 }
 
+html, body {
+  font-family: "Roslindale Display Condensed";
+  background: #c6d5c6;
+}
 
-.navbar {
-  position: fixed !important;
+.nav {
+  position: fixed;
   width: 100%;
   display: flex;
+  justify-content: space-between;
   justify-content: space-around;
-  font-weight: bold !important;
+  font-weight: bold;
   font-size: 20px;
+}
+
+/* .nav-links {
+  display: flex;
+  font-weight: bold;
+} */
+
+.logo, 
+.nav-item {
+  margin: 2em;
+  font-weight: 400;
+  font-size: 1.5vw;
+  display: flex;
 }
 
 .title {
   margin-top: -10%;
 }
 
-html, body {
-  font-family: "Roslindale Display Condensed";
-  background: #c6d5c6;
-}
 
 h1 {
   width: 80%;
@@ -32,10 +46,13 @@ h1 {
   transform: translate(-50%, -50%);
   text-align: center;
   font-weight: 500;
-  font-size: 5vw;
+  font-size: 10vw;
   line-height: 1;
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
 }
 
-
+a {
+  text-decoration: none;
+  font-weight: 500;
+}
 
