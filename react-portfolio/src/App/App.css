@@ -1,3 +1,19 @@
+@font-face {
+  font-family: 'RimonDustin';
+  src: url('../../public/Rimon\ Dustin.otf') format('opentype');  
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../public/Roboto-Regular.ttf') format('opentype');  
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('../../public/Roboto-Bold.ttf') format('opentype');  
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -5,23 +21,85 @@
   color: #0f0f0f;
 }
 
+html, body {
+  font-family: "Roslindale Display Condensed";
+  background: #D4CACD;
+}
 
-.navbar {
-  position: fixed !important;
+.nav {
+  position: fixed;
   width: 100%;
   display: flex;
+  justify-content: space-between;
   justify-content: space-around;
-  font-weight: bold !important;
-  font-size: 20px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.nav-link {
+  --b: 0.1em;   /* the thickness of the line */
+  --c: rgba(0, 0, 0, 0.679); /* the color */
+  
+  color: #0000;
+  padding-block: var(--b);
+  background: 
+    linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+    linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+  -webkit-background-clip: text,padding-box;
+          background-clip: text,padding-box;
+  transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+}
+
+.nav-link:hover {
+  --_p: 100%;
+  --_s: .3s;
+}
+
+.logo, 
+.nav-item {
+  margin: 1em;
+  padding: .5em;
+  font-weight: 400;
+  font-size: 1.5rem;
+  display: flex;
+  font-family: 'Roboto-Bold', fallbackFont, sans-serif;
+  font-weight: bold;
 }
 
 .title {
-  margin-top: -10%;
+  font-family: 'RimonDustin', fallbackFont, sans-serif;
+  margin:  -10% 0 0 -44%;
+  opacity: 0;
+  transform: translateY(100%);
+  animation: flyInFromBottom 1s ease-out forwards;
+  color: #000; /* Black text */ 
+  text-align: left;
+  text-shadow:
+  2px 2px 4px rgba(0, 0, 0, 0.2),    /* subtler darker shadow to the bottom right */
+    -3px -3px 7px rgba(255, 255, 255, 0.3),  /* lighter shadow to the top left */
+    0px 0px 5px rgba(255, 255, 255, 0.05); /* softer white glow to help the text stand out */    
 }
 
-html, body {
-  font-family: "Roslindale Display Condensed";
-  background: #c6d5c6;
+.title-description {
+  font-family: 'Roboto', fallbackFont, sans-serif;
+  font-size: 30px; 
+  text-transform: none;
+  letter-spacing: 1px;
+}
+
+.animation {  
+  transform: translateY(100%);
+  animation: flyInFromBottom 1s ease-out forwards;
+}
+@keyframes flyInFromBottom {
+  0% {
+    transform: translateY(100%); /* Start from the bottom */
+    opacity: 0; /* Start as transparent */
+  }
+  100% {
+    transform: translateY(0); /* End at its natural position */
+    opacity: 1; /* Fully visible */
+  }
 }
 
 h1 {
@@ -32,10 +110,34 @@ h1 {
   transform: translate(-50%, -50%);
   text-align: center;
   font-weight: 500;
-  font-size: 5vw;
+  font-size: 130px;
   line-height: 1;
-  /* text-transform: uppercase; */
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  
 }
 
+a {
+  text-decoration: none;
+  font-weight: 500;
+}
 
+.slide-in {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #bcaeb2;
+  transform-origin: bottom;
+}
 
+.slide-out {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #bcaeb2;
+  transform-origin: top;
+}

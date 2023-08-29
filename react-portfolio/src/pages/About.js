@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import "./About.css";
+import transition from "../transition";
 
-export default function About(props) {
+function About(props) {
   const [about, setAbout] = useState(null);
 
   // create function to make api call
@@ -24,18 +25,18 @@ export default function About(props) {
     //   top: elementRef.current.offsetTop,
     //   behavior: 'smooth'
     // });
-    
+
     return () => {};
   }, []);
 
   // define a function that will return the JSX needed once we get the data
   const loaded = () => (
-    <div>
+    <div className="parent-container">
+      <img className="headshot" src={about.headshot} alt="" />
       <div className="about-container">
-        <h2>{about.name}</h2>
-        <h3>{about.email}</h3>
-        <p>{about.bio}</p>
-        <img className="headshot" src={about.headshot} alt="" />
+        <h2 className="name">{about.name}</h2>
+        <h3 className="email">{about.email}</h3>
+        <p className="bio">{about.bio}</p>
       </div>
     </div>
   );
@@ -43,3 +44,6 @@ export default function About(props) {
   // if data arrives return the result of loaded, if not, an h1 that says loading
   return about ? loaded() : <h1>Loading...</h1>;
 }
+
+// export default About;
+export default transition(About);

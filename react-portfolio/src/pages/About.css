@@ -1,12 +1,64 @@
-.about-container { 
-    padding: 100px;
+@font-face {
+    font-family: 'Mont-Bold';
+    src: url('../../public/Mont-Bold.otf') format('opentype');  
 }
+
+@font-face {
+    font-family: 'Mermaid';
+    src: url('../../public/Mermaid.ttf') format('opentype');  
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../public/Roboto-Regular.ttf') format('opentype');  
+}
+
+.parent-container {
+    display: flex;
+    align-items: center;     
+    justify-content: center; 
+    height: 100vh;          
+    padding: 20px; 
+}        
 
 .headshot {
-    width: 30vw;
-    height: 20vh;
+    width: 380px;
+    height: 380px;
     border-radius: 50%;
-    margin: 30px auto;
-    display: flex;
+    filter: grayscale();
+    transition: filter 0.5s ease-in-out;
+    border: 6px solid whitesmoke; 
+    /* margin-right: 40px; */
 }
 
+.headshot:hover {
+    filter: none;
+}
+
+.about-container { 
+    padding: 100px;
+    justify-content: center;
+    /* text-align: justify; */
+    width: 80vw;
+    max-width: 600px;        
+}
+
+.name {
+    font-family: Mermaid;
+    font-size: 55px;
+    padding-bottom: 7px;
+    letter-spacing: 3px;
+}
+
+.email {
+    font-family: roboto;
+    font-size: 22px;
+    color: rgb(55, 55, 55);
+    padding-bottom: 4px;
+}
+
+.bio {
+    font-family: roboto;
+    font-size: 17px;
+    letter-spacing: 1px;
+}

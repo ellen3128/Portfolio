@@ -1,4 +1,5 @@
 import './App.css';
+import { AnimatePresence } from "framer-motion"
 
 // import components
 import Header from "../components/Header";
@@ -16,6 +17,7 @@ function App() {
 
   return (
     <div className="App">
+      <AnimatePresence mode="wait">
       <Header />
       <Routes>
         <Route exact path="/" element={<Home />} />
@@ -23,6 +25,7 @@ function App() {
         <Route path="/about" element={<About URL={URL} />} />
       </Routes>
       <Footer />
+      </AnimatePresence>
     </div>
   );
 }
