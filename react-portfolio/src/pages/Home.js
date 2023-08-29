@@ -1,10 +1,17 @@
-import './Home.css';
+import "./Home.css";
 import transition from "../transition";
 // import { useRef } from "react";
 
-function Home (props) {
-    return (
-        <h1 className="title"> Ellen Park </h1>
-    )}
+function Home(props) {
+  return (
+    <div>
+      <h1 className="title">
+        {" "}
+        Ellen <br /> Park <br />{" "}
+        <span className="title-description">Design-Inspired Developer</span>
+      </h1>
+    </div>
+  );
+}
 
 export default transition(Home);
