@@ -45,4 +45,5 @@ function About(props) {
   return about ? loaded() : <h1>Loading...</h1>;
 }
 
+// export default About;
 export default transition(About);

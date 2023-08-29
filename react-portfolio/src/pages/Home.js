@@ -4,7 +4,7 @@ import transition from "../transition";
 
 function Home (props) {
     return (
-        <h1 className="title"> Hi, my name is Ellen</h1>
+        <h1 className="title"> Ellen Park </h1>
     )}
 
 export default transition(Home);
