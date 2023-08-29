@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import "./About.css";
+import transition from "../transition";
 
-export default function About(props) {
+function About(props) {
   const [about, setAbout] = useState(null);
 
   // create function to make api call
@@ -24,7 +25,7 @@ export default function About(props) {
     //   top: elementRef.current.offsetTop,
     //   behavior: 'smooth'
     // });
-    
+
     return () => {};
   }, []);
 
@@ -43,3 +44,5 @@ export default function About(props) {
   // if data arrives return the result of loaded, if not, an h1 that says loading
   return about ? loaded() : <h1>Loading...</h1>;
 }
+
+export default transition(About);

@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import "./Projects.css";
+import transition from "../transition";
 
-export default function Projects (props) {
+function Projects (props) {
     // create state to hold projects
   const [projects, setProjects] = useState(null);
 
@@ -46,3 +47,5 @@ export default function Projects (props) {
 
   return projects ? loaded() : <h1>Loading...</h1>;
 }
+
+export default transition(Projects);
