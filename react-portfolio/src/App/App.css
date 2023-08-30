@@ -1,16 +1,16 @@
 @font-face {
   font-family: 'RimonDustin';
-  src: url('../../public/Rimon\ Dustin.otf') format('opentype');  
+  src: url('../../public/font/Rimon\ Dustin.otf') format('opentype');  
 }
 
 @font-face {
   font-family: 'Roboto';
-  src: url('../../public/Roboto-Regular.ttf') format('opentype');  
+  src: url('../../public/font/Roboto-Regular.ttf') format('opentype');  
 }
 
 @font-face {
   font-family: 'Roboto-Bold';
-  src: url('../../public/Roboto-Bold.ttf') format('opentype');  
+  src: url('../../public/font/Roboto-Bold.ttf') format('opentype');  
 }
 
 
