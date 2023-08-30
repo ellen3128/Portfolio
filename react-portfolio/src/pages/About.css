@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'Mont-Bold';
-    src: url('../../public/Mont-Bold.otf') format('opentype');  
+    src: url('../../public/font/Mont-Bold.otf') format('opentype');  
 }
 
 @font-face {
     font-family: 'Mermaid';
-    src: url('../../public/Mermaid.ttf') format('opentype');  
+    src: url('../../public/font/Mermaid.ttf') format('opentype');  
 }
 
 @font-face {
     font-family: 'Roboto';
-    src: url('../../public/Roboto-Regular.ttf') format('opentype');  
+    src: url('../../public/font/Roboto-Regular.ttf') format('opentype');  
 }
 
 .parent-container {
@@ -36,6 +36,7 @@
     filter: grayscale();
     transition: filter 0.5s ease-in-out;
     border: 6px solid whitesmoke; 
+    margin-left: 80px;
     /* margin-right: 40px; */
 }
 
@@ -118,3 +119,6 @@
     8px 8px #b0b0b0;
 }
 
+.contact {
+    align-items: center;
+}

@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 import "./About.css";
 import transition from "../transition";
+import linkedinIcon from "../assets/icons/linkedin.png";
+import githubIcon from "../assets/icons/github.png";
+import Skills from "./Skills"
 
 function About(props) {
   const [about, setAbout] = useState(null);
@@ -31,21 +34,25 @@ function About(props) {
 
   // define a function that will return the JSX needed once we get the data
   const loaded = () => (
-<div className="parent-container">
-    <div className="content-wrapper">
+    <div className="parent-container">
+      <div className="content-wrapper">
         <img className="headshot" src={about.headshot} alt="" />
         <div className="about-container">
-            <h2 className="name">{about.name}</h2>
-            <h3 className="email">{about.email}</h3>
-            <p className="bio">{about.bio}</p>
+          <h2 className="name">{about.name}</h2>
+          <h3 className="email">{about.email}</h3>
+          <p className="bio">{about.bio}</p>
         </div>
+      </div>
+      <div>{< Skills />}</div>
+      <section className="contact">
+      <a href="https://www.linkedin.com/in/hyunellenpark1/">
+        <img style={{width: "55px", height: "55px"}} src={linkedinIcon} alt="LinkedIn Icon" />
+      </a>
+      <a href="https://github.com/ellen3128">
+        <img style={{width: "50px", height: "50px"}} src={githubIcon} alt="Github Icon" />
+      </a>
+      </section>
     </div>
-    <section className="skill-cards">
-        <div className="skill-languages"> Languages </div>
-        <div className="skill-utilities"> Utilities </div>
-        <div className="skill-interests"> Interests </div>
-    </section>
-</div>
   );
 
   // if data arrives return the result of loaded, if not, an h1 that says loading
