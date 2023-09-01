@@ -8,19 +8,19 @@ export default function Header(props) {
         <div className="logo">
           <div className="nav-item">
             <Link className="nav-link" to="/">
-              <div>HOME</div>
+              <div><span>HOME</span></div>
             </Link>
           </div>
 
           <div className="nav-item">
             <Link className="nav-link" to="/about">
-              <div>ABOUT</div>
+              <div><span>ABOUT</span></div>
             </Link>
           </div>
 
           <div className="nav-item">
             <Link className="nav-link" to="/projects">
-              <div>PROJECTS</div>
+              <div><span>PROJECTS</span></div>
             </Link>
           </div>
         </div>

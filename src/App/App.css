@@ -140,3 +140,27 @@ a {
   background: #bcaeb2;
   transform-origin: top;
 }
+
+@media only screen and (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .nav-link {
+    font-size: 18px !important;
+  }
+
+  .title {
+    font-size: 74px;
+  }
+
+  h1 {
+    font-size: 16px;
+    letter-spacing: 3px;
+  }
+
+  .title-description {
+    font-size: 18px;
+  }
+}
