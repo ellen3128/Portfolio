@@ -9,7 +9,7 @@ function Home(props) {
         {" "}
         Ellen <br /> Park <br />{" "}
         <span className="sub-title" aria-label="Hi! I'm a developer">
-        &nbsp;Hi! I'm a &nbsp;<span className="typewriter">&nbsp;</span>
+        &nbsp;Hi! I'm a&nbsp;<span className="typewriter">&nbsp;</span>
         </span>
       </h1>
     </div>

@@ -45,18 +45,18 @@ function About(props) {
       </div>
       <br></br><br></br>
       <div class="text-center"><Skills /></div>
-      <br></br><br></br>
+      <br></br><br></br><br></br>
       <section className="contact">
         <a href="https://www.linkedin.com/in/hyunellenpark1/">
           <img
-            style={{ width: "55px", height: "55px" }}
+            style={{ width: "60px", height: "60px", margin: "10px" }}
             src={linkedinIcon}
             alt="LinkedIn Icon"
           />
         </a>
         <a href="https://github.com/ellen3128">
           <img
-            style={{ width: "50px", height: "50px" }}
+            style={{ width: "55px", height: "55px", margin: "10px" }}
             src={githubIcon}
             alt="Github Icon"
           />
