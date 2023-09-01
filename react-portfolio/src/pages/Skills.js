@@ -1,33 +1,68 @@
+import "./About.css";
+import htmlIcon from "../assets/icons/html.png";
+import cssIcon from "../assets/icons/css.png";
+import jsIcon from "../assets/icons/js.png";
+import reactIcon from "../assets/icons/react.png";
+import nodeIcon from "../assets/icons/nodejs.png";
+import expressIcon from "../assets/icons/express.png"; 
+import mongoIcon from "../assets/icons/mongo.png";
+import pythonIcon from "../assets/icons/python.png";
+import postgreIcon from "../assets/icons/postgre.png";
+import djangoIcon from "../assets/icons/django.png";
+
 export default function Skills() {
   return (
-    <section className="skill-cards">
+    <div className="grid-container">
+    <div className="grid-item">
+        <img src={htmlIcon} alt="HTML" />
+        <span className="grid-text">HTML</span>
+    </div>
 
-      <div className="skill-languages">
-        <span className="language-label">Languages </span>
-        <div></div>
-        <span className="language">HTML</span>
-        <span className="language">CSS</span>
-        <span className="language">JavaScript</span>
-        <span className="language">Express</span>
-        <span className="language">NodeJS</span>
-        <span className="language">React</span>
-        <span className="language">Python</span>
-        <span className="language">PostgreSQL</span>
-      </div>
-      
-      <div className="skill-utilities">
-        <span className="utility-label">Frameworks</span>
-        <div></div>
-      <span className="utility">MongoDB</span>
-      <span className="utility">Postman</span>
-      <span className="utility">Git</span>
-      <span className="utility">GitHub</span>
-      <span className="utility">MS Office</span>
+    <div className="grid-item">
+        <img src={cssIcon} alt="CSS" />
+        <span className="grid-text">CSS</span>
       </div>
 
+      <div className="grid-item">
+        <img src={jsIcon} alt="JS" />
+        <span className="grid-text">JavaScript</span>
+      </div>
 
+      <div className="grid-item">
+        <img src={reactIcon} alt="React" />
+        <span className="grid-text">React</span>
+      </div>
 
-      <div className="skill-interests"> Interests </div>
-    </section>
-  );
+      <div className="grid-item">
+        <img src={expressIcon} alt="Express" />
+        <span className="grid-text">Express</span>
+      </div>
+
+      <div className="grid-item">
+        <img src={nodeIcon} alt="Node" />
+        <span className="grid-text">NodeJS</span>
+      </div>
+
+      <div className="grid-item">
+        <img src={mongoIcon} alt="Mongo" />
+        <span className="grid-text">Mongo</span>
+      </div>
+
+      <div className="grid-item">
+        <img src={pythonIcon} alt="Python" />
+        <span className="grid-text">Python</span>
+      </div>
+
+      <div className="grid-item">
+        <img src={postgreIcon} alt="Postgre" />
+        <span className="grid-text">Postgre</span>
+      </div>
+
+      <div className="grid-item">
+        <img src={djangoIcon} alt="Django" />
+        <span className="grid-text">Django</span>
+      </div>
+
+    </div>
+  )
 }
