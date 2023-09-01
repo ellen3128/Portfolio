@@ -123,3 +123,30 @@
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: -20px;
+  }
+
+  .title {
+    text-align: left;
+    font-size: 80px;
+  }
+
+  h1 {
+    font-size: 50px;
+    letter-spacing: 3px;
+  
+  }
+
+  .name {
+    text-align: center;
+  }
+
+  .title-description {
+    font-size: 18px;
+  }
+}

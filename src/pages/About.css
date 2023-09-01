@@ -145,3 +145,64 @@
     background-color: #bb2649;
     color: white;
 }
+
+/* ... (your existing styles) ... */
+
+/* Media Queries for Responsiveness */
+@media only screen and (max-width: 600px) {
+    .parent-container {
+       justify-content: center;
+       text-align: center;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr); /* Reducing columns for smaller screens */
+        gap: 10px;
+        margin-top: 0px;
+    }
+
+    .headshot {
+        width: 240px;
+        height: 240px;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .about-container {
+        padding: 50px 20px;
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    .skill-cards {
+        grid-template-columns: repeat(2,1fr); /* Adjusted for mobile screens */
+        gap: 2rem;
+        margin: 20px 0;
+    }
+
+    .skill-card {
+        width: 180px;
+        height: 180px;
+    }
+
+    .name {
+        font-size: 40px;
+    }
+
+    .email {
+        font-size: 18px;
+    }
+
+    .bio {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .grid-text {
+        font-size: 0.6em;
+    }
+}
