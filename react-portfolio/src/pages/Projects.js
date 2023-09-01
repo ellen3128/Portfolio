@@ -36,13 +36,14 @@ function Projects(props) {
         </div>
         <div className="project-description">{project.description}</div>
         <div>
-          <a className="git" href={project.git}>
-            <button>Github</button>
-          </a>
+          <a href={project.git}>
+            <button className="git">Github</button>
+          </a>&nbsp;
           <a href={project.live}>
-            <button>live site</button>
+            <button className="live-site">live site</button>
           </a>
         </div>
+        <br></br>
       </div>
     ));
   };

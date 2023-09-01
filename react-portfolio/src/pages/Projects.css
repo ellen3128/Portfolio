@@ -1,12 +1,15 @@
+@font-face {
+    font-family: 'Mont-Bold';
+    src: url('../../public/font/Mont-Bold.otf') format('opentype');  
+}
 
 .project-container {
     margin-top: 0px;
-    padding: 20px;
+    padding: 10px;
     align-items: center;
     justify-content: center;
     text-align: center;
-    
-    
+    height: 100%;
 }
 
 .project-image { 
@@ -21,11 +24,13 @@
 .projectName {
     font-size: 26px;              
     font-weight: bold;
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Mont-Bold'; 
     letter-spacing: 1.5px;         
     color: #000000;                  
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
     padding: 10px;
+    color: rgb(58, 58, 58)
+    /* letter-spacing: 2px; */
 }
 
 .project-description {
@@ -38,3 +43,45 @@
     overflow-y: auto;
 }
 
+/* .git, .live-site {
+    background-color: blue;
+    color: white;
+    font-size: 17px;
+    padding: 5px;
+    border-radius: 5px;
+} */
+
+.git, .live-site {
+    background-color: #c7d7ec; /* Neutral background */
+    color: #333; /* Dark text for contrast */
+    font-size: 17px;
+    font-weight: bold;
+    margin: 10px;
+    padding: 6px 12px; /* Generous padding for a bigger touch target */
+    border-radius: 15px; /* Larger border-radius for a pill-like shape */
+    border: none; /* Remove any default borders */
+    box-shadow:
+        -5px -5px 10px rgba(255, 255, 255, 0.8), /* Top-left light shadow */
+        5px 5px 10px rgba(0, 0, 0, 0.1); /* Bottom-right dark shadow */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+    cursor: pointer; /* Indicate it's clickable */
+    text-decoration: none; /* Remove underlines if these are link elements */
+    display: inline-block; /* To allow for width/height and block behaviors */
+    position: relative; /* To help with the 3D effect */
+}
+
+.git:hover, .live-site:hover {
+    background-color: #d5dbe3; /* Slightly darker background on hover */
+    box-shadow:
+        -2px -2px 5px rgba(255, 255, 255, 0.8),
+        2px 2px 5px rgba(0, 0, 0, 0.1); /* Reduced shadow for "pressed" effect */
+    transform: translateY(2px); /* Button moves down slightly to mimic being pressed */
+}
+
+.git:active, .live-site:active {
+    background-color: #cad0d9; /* Even darker background for active state */
+    box-shadow:
+        inset -2px -2px 5px rgba(255, 255, 255, 0.8),
+        inset 2px 2px 5px rgba(0, 0, 0, 0.1); /* Inset shadow for a more pronounced "pressed" effect */
+    transform: translateY(1px); /* Further movement down for active state */
+}
