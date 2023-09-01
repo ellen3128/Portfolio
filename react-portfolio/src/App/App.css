@@ -27,14 +27,13 @@ html, body {
 }
 
 .nav {
-  position: fixed;
+  position: sticky;
   width: 100%;
   display: flex;
   justify-content: space-between;
   justify-content: space-around;
   font-weight: bold;
-  font-size: 30px;
-}
+  font-size: 30px;}
 
 .nav-link {
   --b: 0.1em;   /* the thickness of the line */

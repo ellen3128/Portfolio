@@ -5,12 +5,14 @@
         "name": "Space-Match",
         "live": "https://ellen3128.github.io/Space-Match/",
         "git": "https://github.com/ellen3128/Space-Match",
-        "image": "https://i.imgur.com/Lda7NNL.png"
+        "image": "https://i.imgur.com/Lda7NNL.png", 
+        "description": "Spce Match is a card matching game that tests player's memory and concentration skills as the player flips over cards to find matching pairs. The challenge lies in remembering the positions of the hidden cards and making strategic moves to uncover them before times runs out. As player progresses to higher levels, the difficulty increases."
     }, 
     {
         "name": "Theme-Generator",
         "live": "https://alella-theme-generator-49b5c35126f2.herokuapp.com/",
         "git": "https://github.com/ellen3128/theme-generator",
-        "image":"https://i.imgur.com/Ricqm5w.png"
+        "image":"https://i.imgur.com/Ricqm5w.png", 
+        "description": "Theme Generator is a full-stack, CRUD web application that revolutionizes the way developers design and style web projects. With just a simple description, Theme Generator offers an expansive array of AI-generated web application styling properties. From fonts to background colors, navigation styles to table decorations, and more.User can also modify and preview styles right on the page, allowing user to effortlessly discover the perfect aesthetic to suit the unique needs."
     }
 ]
